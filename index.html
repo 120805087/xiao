@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>曾经的回忆</title>
+	<link rel="stylesheet" type="text/css" href="css/polaroid-gallery.css"/>
+</head>	
+<body class="fullscreen">
+    <div id="warp-1">
+		<span>如果有一天我们感情变了,那我再追你一遍。</span>
+	</div>
+	<div id="warp-2">
+		<span>你抱着我的时候是我这辈子最温暖的一刻。</span>
+	</div>
+	<div id="warp-3">
+		<span>虽然你不是最好的 但是有你却比什么都好。</span>
+	</div>
+	<div id="warp-4">
+		<span>往后余生风雪是你 平淡是你 清贫是你 荣华是你 心底温柔是你 目光所至 也是你。</span>
+	</div>
+	<div id="gallery" class="fullscreen"></div>
+	<div id="nav" class="navbar">
+	    <button id="preview">&lt; 前一张</button>
+	    <button id="next">下一张 &gt;</button>
+	</div>
+	
+	
+	<script type="text/javascript" src="js/polaroid-gallery.js"></script>
+	<script>
+	    window.onload = function () {
+	        new polaroidGallery("data/data.json");
+			var warp1 = document.getElementById("warp-1");
+			var warp2 = document.getElementById("warp-2");
+			var warp3 = document.getElementById("warp-3");
+			var warp4 = document.getElementById("warp-4");
+			warp1.onclick = function(){
+				warp1.style.display = "none";
+			}
+			warp2.onclick = function(){
+				warp2.style.display = "none";
+			}
+			warp3.onclick = function(){
+				warp3.style.display = "none";
+			}
+			warp4.onclick = function(){
+				warp4.style.display = "none";
+			}
+	    }
+	</script>
+</body>
+</html>

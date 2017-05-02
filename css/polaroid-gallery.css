@@ -1,0 +1,79 @@
+body {
+    width:100%;
+    height:100%;
+    background-color: #f2dce8;
+    overflow: hidden;
+}
+#warp-1,#warp-2,#warp-3,#warp-4{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:10000;
+    background-color: #f2dce8;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    color: #8f8464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#warp-2{z-index:9000}
+#warp-3{z-index:8000}
+#warp-4{z-index:7000}
+#warp-1 span,#warp-2 span,#warp-3 span,#warp-4 span{font-size:2rem;}
+.fullscreen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    width: 200px;
+    position: absolute;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+figure img {
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+figure figcaption {
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    color: #8F8476;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    z-index: 999;
+}
+
+button {
+    background-color: transparent;
+    padding: 10px 24px;
+    color: #ffffff;
+    border: 2px solid black;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #f4c8e0;
+    color: white;
+}
